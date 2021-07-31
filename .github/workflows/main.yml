@@ -1,0 +1,18 @@
+
+name: CI
+
+on:
+  workflow_dispatch:
+
+jobs:
+  docker-action-example:
+    runs-on: ubuntu-latest
+    name: my docker example
+    steps:
+      - name: Hello action
+        id: hello
+        uses: j-dunham/docker-action-example@v1
+        with:
+          who-to-greet: "Sun"
+      - name: Get the output time
+        run: echo "The time was ${{ steps.hello.outputs.time }}"
