@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Hello action
         id: hello
-        uses: j-dunham/docker-action-example@v3
+        uses: j-dunham/docker-action-example@v3.1
         with:
           who-to-greet: "Sun"
       - name: Get the output time
