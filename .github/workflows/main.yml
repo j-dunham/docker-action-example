@@ -21,4 +21,4 @@ jobs:
         id: no-args
         uses: j-dunham/docker-action-example@v3.2
       - name: Get no args output
-        run: echo "No args time was ${{ steps.no-args.output.time }}"
+        run: echo "No args time was ${{ steps.no-args.outputs.time }}"
