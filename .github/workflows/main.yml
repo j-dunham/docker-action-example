@@ -11,8 +11,9 @@ jobs:
     steps:
       - name: Hello action
         id: hello
-        uses: j-dunham/docker-action-example@v3.1
+        uses: j-dunham/docker-action-example@v3.2
         with:
           who-to-greet: "Sun"
+          say-something: "What"
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
