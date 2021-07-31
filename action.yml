@@ -5,6 +5,9 @@ inputs:
     description: 'Who to greet'
     required: true
     default: '....'
+  say-something:
+    description: 'Optional thing to say'
+    required: false
 outputs:
   time:
     description: 'The time we greeted you'
@@ -13,3 +16,4 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.who-to-greet }}
+    - ${{ inputs.say-something }}
