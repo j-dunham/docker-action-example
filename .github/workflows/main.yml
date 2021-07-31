@@ -1,5 +1,5 @@
 
-name: CI
+name: example action
 
 on:
   workflow_dispatch:
