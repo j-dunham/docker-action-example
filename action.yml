@@ -1,7 +1,7 @@
 name: 'Docker Action'
 description: 'Docker example action'
 inputs:
-  who-to-great:
+  who-to-greet:
     description: 'Who to greet'
     required: true
     default: '....'
